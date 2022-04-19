@@ -1,0 +1,21 @@
+{
+  "name": "vanity",
+  "version": "1.0.0",
+  "description": "Vanity name registration system which is resistant to frontrunning.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test-deploy": "truffle migrate --network rinkeby --reset",
+    "verify": "truffle run verify VanityName --network rinkeby",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Talha Yusuf",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "@truffle/hdwallet-provider": "^2.0.6",
+    "truffle-plugin-verify": "^0.5.25"
+  }
+}
